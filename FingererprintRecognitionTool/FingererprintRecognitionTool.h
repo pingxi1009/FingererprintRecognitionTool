@@ -8,7 +8,7 @@ class FingererprintRecognitionTool : public QMainWindow
     Q_OBJECT
 
 public:
-    FingererprintRecognitionTool(QWidget *parent = Q_NULLPTR);
+    FingererprintRecognitionTool(int width, int height, QWidget *parent = Q_NULLPTR);
 
 private:
     Ui::FingererprintRecognitionToolClass ui;

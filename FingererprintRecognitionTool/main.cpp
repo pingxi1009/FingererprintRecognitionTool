@@ -13,13 +13,13 @@ int main(int argc, char *argv[])
 	imshow("dst", dst);
 	waitKey(0);
 
-    //QApplication a(argc, argv);
-    //FingererprintRecognitionTool w(width, height);
+    QApplication a(argc, argv);
+    FingererprintRecognitionTool w(width, height);
 
 
-    //w.show();
+    w.show();
 
 	
-    //return a.exec();
-	return 0;
+    return a.exec();
+	//return 0;
 }

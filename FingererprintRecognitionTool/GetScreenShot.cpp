@@ -53,3 +53,14 @@ bool GetScreenShot::HbitmaoToMat(HBITMAP& _hBmp, Mat& _mat)
 	_mat = v_mat;
 	return TRUE;
 }
+
+int GetScreenShot::GetFingPrint(Mat _mat, Mat* mat_target, Rect* rect_target, int iLenth)
+{
+	for (int i = 0 ; i < iLenth; i++)
+	{
+		mat_target[i] = _mat(rect_target[i]);
+	}
+	
+
+	return 0;
+}
